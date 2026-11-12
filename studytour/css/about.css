@@ -1,0 +1,389 @@
+
+/* =====================================================
+   ABOUT PAGE
+   Japanese editorial profile layout
+===================================================== */
+
+.about-page {
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+.about-page .site-header {
+    flex-shrink: 0;
+}
+
+.about-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+.about-nav a {
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 250ms ease;
+}
+
+.about-nav a:hover {
+    color: var(--accent);
+}
+
+.nav-divider {
+    color: var(--line);
+}
+
+.nav-current {
+    color: var(--ink);
+}
+
+
+/* Main layout */
+
+.about-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.about-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    align-items: center;
+    gap: clamp(3rem, 7vw, 7rem);
+}
+
+
+/* Portrait */
+
+.about-portrait-column {
+    width: 100%;
+}
+
+.about-portrait-frame {
+    position: relative;
+    border: 1px solid var(--line);
+    padding: .65rem;
+}
+
+.about-portrait {
+    display: block;
+    width: 100%;
+    height: clamp(380px, 62vh, 590px);
+    object-fit: cover;
+    filter: saturate(.78) contrast(.97);
+}
+
+.portrait-caption {
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem .25rem .15rem;
+    color: var(--muted);
+    font-size: .6rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+.portrait-note {
+    margin: 1rem 0 0;
+    color: var(--muted);
+    font-size: .75rem;
+    font-style: italic;
+}
+
+
+/* Text content */
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    color: var(--muted);
+    font-size: .65rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+}
+
+.eyebrow-line {
+    width: 30px;
+    height: 1px;
+    background: var(--accent);
+}
+
+.about-content h1 {
+    margin: 1.5rem 0 1.5rem;
+    font-family: var(--serif);
+    font-size: clamp(4rem, 6.5vw, 6.8rem);
+    font-weight: 400;
+    letter-spacing: -.07em;
+    line-height: .95;
+    color: var(--ink);
+}
+
+
+.about-content h2 em {
+    color: var(--accent);
+    font-style: normal;
+}
+
+.about-content h2 {
+    margin: 1.5rem 0 1.5rem;
+    font-family: var(--serif);
+    font-size: clamp(3rem, 4.5vw, 4.8rem);
+    font-weight: 400;
+    letter-spacing: -.07em;
+    line-height: .95;
+    color: var(--ink);
+}
+
+.about-content h2 em {
+    color: var(--accent);
+    font-style: normal;
+}
+
+.about-intro {
+    max-width: 520px;
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: clamp(1.15rem, 1.8vw, 1.45rem);
+    line-height: 1.65;
+}
+
+.about-divider {
+    width: 100%;
+    height: 1px;
+    margin: 1.5rem 0;
+    background: var(--line);
+}
+
+.about-bio {
+    color: var(--muted);
+    font-size: .9rem;
+    line-height: 1.8;
+}
+
+.about-bio p {
+    margin-bottom: .8rem;
+}
+
+
+/* Personal details */
+
+.about-details {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.8rem;
+    padding-top: 1.3rem;
+    border-top: 1px solid var(--line);
+}
+
+.about-detail {
+    display: flex;
+    flex-direction: column;
+    gap: .45rem;
+}
+
+.detail-label {
+    color: var(--muted);
+    font-size: .58rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+.detail-value {
+    color: var(--ink);
+    font-size: .78rem;
+}
+
+
+/* Links */
+
+.about-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    margin-top: 2rem;
+}
+
+.about-link-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: .9rem 1.2rem;
+    background: var(--accent);
+    color: var(--white);
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity 250ms ease;
+}
+
+.about-link-primary:hover {
+    opacity: .8;
+    color: var(--white);
+}
+
+.about-link-primary span {
+    font-size: 1rem;
+}
+
+.about-link-secondary {
+    color: var(--muted);
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: color 250ms ease;
+}
+
+.about-link-secondary:hover {
+    color: var(--accent);
+}
+
+
+/* Footer */
+
+.about-footer {
+    flex-shrink: 0;
+}
+
+.about-footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: .58rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 991.98px) {
+    .about-main {
+        padding: 2.5rem 0;
+    }
+
+    .about-layout {
+        gap: 2.5rem;
+    }
+
+    .about-portrait {
+        height: 480px;
+    }
+
+    .about-content h1 {
+        font-size: clamp(3.8rem, 8vw, 5.5rem);
+    }
+
+    .about-footer-inner span:last-child {
+        display: none;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .about-page {
+        min-height: 100vh;
+        min-height: 100dvh;
+        overflow-y: auto;
+    }
+
+    .about-main {
+        padding: 2rem 0 3rem;
+    }
+
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .about-portrait-column {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .about-portrait {
+        height: min(75vw, 460px);
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about-content h1 {
+        font-size: clamp(4rem, 14vw, 5.5rem);
+    }
+
+    .about-details {
+        gap: .8rem;
+    }
+
+    .about-footer-inner {
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .about-footer-inner span:last-child {
+        display: none;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .about-nav {
+        font-size: .6rem;
+        gap: .6rem;
+    }
+
+    .about-content h1 {
+        font-size: 4rem;
+    }
+
+    .about-links {
+        gap: 1rem;
+    }
+
+    .about-link-primary {
+        gap: 1rem;
+    }
+
+    .detail-value {
+        font-size: .7rem;
+    }
+}
+
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .about-page *,
+    .about-page *::before,
+    .about-page *::after {
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+    }
+}
